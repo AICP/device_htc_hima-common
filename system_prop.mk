@@ -2,9 +2,9 @@
 # System Properties for HTC One M9 (hima)
 #
 
-# MTP and USB-OTG
+# MTP, ADB and USB-OTG
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp \
+    persist.sys.usb.config=mtp,adb \
     persist.sys.isUsbOtgEnabled=true
 
 # HTC RIL
