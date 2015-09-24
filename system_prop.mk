@@ -2,7 +2,11 @@
 # System Properties for HTC One M9 (hima)
 #
 
-# MTP, ADB and USB-OTG
+# IO Scheduler
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.io.scheduler=bfq
+
+# MTP and USB-OTG
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp,adb \
     persist.sys.isUsbOtgEnabled=true
