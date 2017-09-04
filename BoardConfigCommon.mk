@@ -184,7 +184,8 @@ TARGET_LD_SHIM_LIBS := \
     /vendor/lib/libizat_core.so|libshim_gps_hima.so \
     /vendor/lib64/libizat_core.so|libshim_gps_hima.so \
     /system/lib/liblog.so|liblog_htc.so \
-    /system/lib64/liblog.so|liblog_htc.so
+    /system/lib64/liblog.so|liblog_htc.so \
+    /vendor/lib/libmmcamera2_stats_algorithm.so|libshim_atomic.so
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
