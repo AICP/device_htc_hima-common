@@ -37,3 +37,11 @@ cc_library_shared {
 
 }
 
+cc_library_shared {
+
+    srcs: ["atomic.cpp"],
+
+    name: "libshim_atomic",
+
+}
+
