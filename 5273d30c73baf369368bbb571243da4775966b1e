@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7b217438_d4c2f1bd",
+        "filename": "sepolicy/untrusted_app.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2018-07-13T02:34:58Z",
+      "side": 1,
+      "message": "this is a macro, should be:\nget_prop(untrusted_app, qemu_hw_mainkeys_prop)",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 60
+      },
+      "revId": "5273d30c73baf369368bbb571243da4775966b1e",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
+      "unresolved": false
+    }
+  ]
+}
