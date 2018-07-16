@@ -109,10 +109,10 @@ on enable-low-power
 
     # configure core_ctl module parameters
     write /sys/devices/system/cpu/cpu0/core_ctl/max_cpus 4
-    write /sys/devices/system/cpu/cpu0/core_ctl/min_cpus 4
-    write /sys/devices/system/cpu/cpu0/core_ctl/busy_up_thres 0
-    write /sys/devices/system/cpu/cpu0/core_ctl/busy_down_thres 0
-    write /sys/devices/system/cpu/cpu0/core_ctl/offline_delay_ms 100
+    write /sys/devices/system/cpu/cpu0/core_ctl/min_cpus 2
+    write /sys/devices/system/cpu/cpu0/core_ctl/busy_up_thres 35
+    write /sys/devices/system/cpu/cpu0/core_ctl/busy_down_thres 20
+    write /sys/devices/system/cpu/cpu0/core_ctl/offline_delay_ms 800
     write /sys/devices/system/cpu/cpu0/core_ctl/is_big_cluster 0
     write /sys/devices/system/cpu/cpu0/core_ctl/task_thres 4
     chown system:system /sys/devices/system/cpu/cpu0/core_ctl/min_cpus
