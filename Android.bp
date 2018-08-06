@@ -2,6 +2,7 @@ subdirs = [
     "camera",
     "light",
     "power",
+    "thermal",
     "usb",
     "vibrator",
 ]
