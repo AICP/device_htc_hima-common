@@ -50,6 +50,11 @@
 # Vibrator control
 /sys/devices/virtual/timed_output/vibrator/voltage_level u:object_r:sysfs_vibeamp:s0
 
+# Sensors
+/sys/bus/iio/devices(/.*)?                                          u:object_r:sysfs_sensors:s0
+/sys/devices/soc.0/f9927000.i2c/i2c-15/15-0072/iio:device0(/.*)?    u:object_r:sysfs_sensors:s0
+/sys/devices/virtual/htc_sensorhub(/.*)?                            u:object_r:sysfs_sensors:s0
+
 # Vendor blobs
 /system/vendor/bin/qseecomd            u:object_r:qseecomd_exec:s0
 /system/vendor/bin/qmuxd               u:object_r:qmux_exec:s0
