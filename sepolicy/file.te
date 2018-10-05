@@ -5,3 +5,6 @@ type debugfs_heaps_system, fs_type, debugfs_type;
 type cw_calibrator_data_file, file_type, data_file_type;
 type rpm_stats_debug_file, file_type;
 type rmt_storage_debug_file, file_type;
+type proc_kernel_sched, fs_type;
+type proc_swap, fs_type;
+type dpmd_data_file, file_type;
