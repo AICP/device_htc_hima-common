@@ -3,6 +3,7 @@ set_prop(init, wcnss_prop)
 allow init debugfs:file w_file_perms;
 allow init debugfs_rmt:dir relabelfrom;
 allow init debugfs_rmt:file relabelfrom;
+allow init hwservicemanager:binder {call transfer};
 allow init proc:file {setattr};
 allow init sysfs_class_leds:file {setattr};
 allow init sysfs_class_leds:lnk_file r_file_perms;
