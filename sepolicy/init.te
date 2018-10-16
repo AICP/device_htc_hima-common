@@ -10,3 +10,7 @@ allow init sysfs_class_leds:lnk_file r_file_perms;
 allow init sysfs_graphics:file setattr;
 allow init sysfs_scheduler:file { open setattr write };
 allow init sysfs:file { setattr write open };
+allow init vendor_file:file { execute_no_trans };
+allow init hal_usb_hwservice:hwservice_manager { add };
+allow init hidl_base_hwservice:hwservice_manager {add };
+allow init system_server:binder { call };
