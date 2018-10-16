@@ -157,6 +157,7 @@ BOARD_GLOBAL_CFLAGS += -DCOMPAT_SENSORS_M
 
 # SELinux
 include device/qcom/sepolicy-legacy/sepolicy.mk
+include device/aicp/sepolicy/common/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
 
 # We modify several neverallows, so let the build proceed
