@@ -78,6 +78,9 @@
 /sys/devices/soc.0/f9927000.i2c/i2c-15/15-0072/iio:device0(/.*)?    u:object_r:sysfs_sensors:s0
 /sys/devices/virtual/htc_sensorhub(/.*)?                            u:object_r:sysfs_sensors:s0
 
+# USB HAL
+/(vendor|system/vendor)/bin/hw/android\.hardware\.usb@1\.0-service\.basic u:object_r:hal_usb_default_exec:s0
+
 # Vendor blobs
 /system/vendor/bin/qseecomd            u:object_r:qseecomd_exec:s0
 /system/vendor/bin/mm-qcamera-daemon   u:object_r:mm-qcamera-daemon_exec:s0
