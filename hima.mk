@@ -148,6 +148,10 @@ PRODUCT_PACKAGES += \
 # Encryption
 TARGET_HW_DISK_ENCRYPTION := true
 
+# Gesture Handler
+PRODUCT_PACKAGES += \
+    GestureHandler
+
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl \
