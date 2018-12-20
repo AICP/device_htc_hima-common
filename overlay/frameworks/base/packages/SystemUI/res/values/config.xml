@@ -27,4 +27,6 @@
     <!-- Doze: can we assume the pickup sensor includes a proximity check? -->
     <bool name="doze_pickup_performs_proximity_check">true</bool>
 
+	<!-- CPUInfo: Path to be used when showing cpu temperature -->
+    <string name="config_cpuTempSensor">/sys/class/thermal/thermal_zone1/temp</string>
 </resources>
