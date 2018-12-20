@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "13733da5_61c3cd3a",
+        "filename": "overlay/frameworks/base/packages/SystemUI/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1375
+      },
+      "writtenOn": "2018-12-20T07:09:13Z",
+      "side": 1,
+      "message": "I think this should be thermal_zone1",
+      "range": {
+        "startLine": 31,
+        "startChar": 40,
+        "endLine": 31,
+        "endChar": 77
+      },
+      "revId": "f87629cd34b81aee81d12d999c2f52203bfea464",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
+      "unresolved": true
+    }
+  ]
+}
