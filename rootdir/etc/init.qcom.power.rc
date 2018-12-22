@@ -103,6 +103,35 @@ on property:sys.boot_completed=1
     write /proc/sys/kernel/sched_freq_inc_notify 400000
     write /proc/sys/kernel/sched_freq_dec_notify 400000
 
+# init PnPMgr node
+    chmod 0664 /sys/power/pnpmgr/apps/media_mode
+    chown media system /sys/power/pnpmgr/apps/media_mode
+    chown system /sys/power/pnpmgr/apps/activity_trigger
+    chown system /sys/power/pnpmgr/apps/non_activity_trigger
+    chown system /sys/power/pnpmgr/launch_event
+    chown system /sys/power/powersave
+    chown system /sys/power/pnpmgr/cluster/big/user_perf_lvl
+    chown system /sys/power/pnpmgr/cluster/big/user_lvl_to_min_freq
+    chown system /sys/power/pnpmgr/cluster/big/hotplug/user_cpunum_max
+    chown system /sys/power/pnpmgr/cluster/big/hotplug/user_cpunum_min
+    chown system /sys/power/pnpmgr/cluster/little/user_perf_lvl
+    chown system /sys/power/pnpmgr/cluster/little/user_lvl_to_min_freq
+    chown system /sys/power/pnpmgr/cluster/little/hotplug/user_cpunum_max
+    chown system /sys/power/pnpmgr/cluster/little/hotplug/user_cpunum_min
+    chown system /sys/power/pnpmgr/touch_boost
+    chown system /sys/power/pnpmgr/long_duration_touch_boost
+    chown system /sys/power/wait_for_fb_status
+    chmod 0664 /sys/power/pnpmgr/display/single_layer
+    chown system /sys/power/pnpmgr/display/single_layer
+
+    write /sys/power/pnpmgr/cluster/big/hotplug/mp_cpunum_max 4
+    write /sys/power/pnpmgr/cluster/big/hotplug/mp_cpunum_min 1
+    write /sys/power/pnpmgr/cluster/little/hotplug/mp_cpunum_max 4
+    write /sys/power/pnpmgr/cluster/little/hotplug/mp_cpunum_min 3
+    write /sys/power/pnpmgr/long_duration_touch_boost_duration 3000
+    write /sys/power/pnpmgr/touch_boost_duration 200
+
+
     #enable rps static configuration
     write /sys/class/net/rmnet_ipa0/queues/rx-0/rps_cpus "0f"
     write /sys/class/devfreq/qcom,cpubw.34/governor "bw_hwmon"

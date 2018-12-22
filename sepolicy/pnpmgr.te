@@ -1,0 +1,18 @@
+type pnpmgr, domain;
+type pnpmgr_exec, exec_type, file_type;
+init_daemon_domain(pnpmgr)
+
+allow pnpmgr init:unix_stream_socket {connectto};
+allow pnpmgr property_socket:sock_file {write};
+allow pnpmgr self:capability {dac_override};
+allow pnpmgr servicemanager:binder {call};
+allow pnpmgr surfaceflinger:binder {call};
+allow pnpmgr surfaceflinger_service:service_manager {find};
+allow pnpmgr sysfs_battery_supply:dir {search};
+allow pnpmgr sysfs_battery_supply:file rw_file_perms;
+allow pnpmgr sysfs_devices_system_cpu:file rw_file_perms;
+allow pnpmgr sysfs:file rw_file_perms;
+allow pnpmgr sysfs_kgsl:file r_file_perms;
+allow pnpmgr sysfs_lowmemorykiller:dir {search};
+allow pnpmgr sysfs_lowmemorykiller:file rw_file_perms;
+allow pnpmgr proc:file rw_file_perms;

@@ -123,6 +123,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.min_freq_0=384000 \
     ro.min_freq_4=384000
 
+# PnpMgr
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.pnpmgr_library=libpnp-at.so
 # Radio
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     rild.libpath=/system/vendor/lib64/libril-qc-qmi-1.so \

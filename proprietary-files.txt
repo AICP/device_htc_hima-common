@@ -749,6 +749,9 @@ bin/pm-service:vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
 vendor/lib/libperipheral_client.so
 
+# PnpMgr
+bin/pnpmgr:vendor/bin/pnpmgr
+
 # Postprocessing
 vendor/lib64/libmm-als.so
 vendor/lib64/libmm-qdcm.so

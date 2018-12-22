@@ -342,6 +342,11 @@ on boot
 
 # Services start here
 
+service pnpmgr /system/vendor/bin/pnpmgr -c /system/vendor/etc/pnp.bin
+    class core
+    user system
+    group system
+
 service adsprpcd /system/vendor/bin/adsprpcd
    class main
    user media
