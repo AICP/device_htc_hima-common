@@ -4,3 +4,6 @@ allow servicemanager pm-service:process getattr;
 allow servicemanager pm-proxy:dir search;
 allow servicemanager pm-proxy:file {open read};
 allow servicemanager pm-proxy:process getattr;
+allow servicemanager pnpmgr:dir {search};
+allow servicemanager pnpmgr:file r_file_perms;
+allow servicemanager pnpmgr:process {getattr};

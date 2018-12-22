@@ -79,6 +79,7 @@
 /sys/devices/virtual/htc_sensorhub(/.*)?                            u:object_r:sysfs_sensors:s0
 
 # Vendor blobs
+/system/vendor/bin/pnpmgr              u:object_r:pnpmgr_exec:s0
 /system/vendor/bin/qseecomd            u:object_r:qseecomd_exec:s0
 /system/vendor/bin/mm-qcamera-daemon   u:object_r:mm-qcamera-daemon_exec:s0
 /system/vendor/bin/pm-service          u:object_r:pm-service_exec:s0
