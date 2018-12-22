@@ -265,6 +265,12 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+# PNPMGR
+# Rename pnp.xml to pnp.bin, as it's a binary file and the build process
+# attempts to parse all XML, resulting build failure.
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/pnp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pnp.bin
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0-impl \
