@@ -460,6 +460,12 @@ service thermal-engine /system/vendor/bin/thermal-engine -c /system/vendor/etc/t
    group root
    writepid /dev/cpuset/system-background/tasks
 
+service fm_dl /system/bin/setprop hw.fm.init 1
+   user root
+   group system fm_radio
+   disabled
+   oneshot
+
 service time_daemon /system/vendor/bin/time_daemon
    class late_start
    user root
