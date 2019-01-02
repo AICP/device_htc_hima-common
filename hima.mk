@@ -152,6 +152,12 @@ PRODUCT_PACKAGES += \
 # Encryption
 TARGET_HW_DISK_ENCRYPTION := true
 
+# FM Radio
+PRODUCT_PACKAGES += \
+    FM2 \
+    libqcomfm_jni \
+    qcom.fmradio
+
 # Gesture Handler
 PRODUCT_PACKAGES += \
     GestureHandler
