@@ -375,6 +375,12 @@ service energy-awareness /system/vendor/bin/energy-awareness
     group system
     oneshot
 
+service fm_dl /system/bin/setprop hw.fm.init 1
+   user root
+   group system fm_radio
+   disabled
+   oneshot
+
 service ipacm-diag /system/vendor/bin/ipacm-diag
     class main
     user system
