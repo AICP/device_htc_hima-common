@@ -37,6 +37,7 @@ TARGET_BOOTANIMATION_HALF_RES := true
 
 # Permissions
 PRODUCT_COPY_FILES += \
+    external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
@@ -75,6 +76,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/com.htc.voicedictation_c.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.htc.voicedictation_c.xml \
     $(LOCAL_PATH)/configs/permissions/com.htc.key.dap.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.htc.voicedictation_c.xml \
     $(LOCAL_PATH)/configs/permissions/com.htc.sensor.hallsensor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.htc.voicedictation_c.xml
+
+# ANT+
+PRODUCT_PACKAGES += \
+    AntHalService \
+    com.dsi.ant.antradio_library \
+    libantradio
 
 # Audio
 PRODUCT_PACKAGES += \
