@@ -61,7 +61,7 @@ on property:sys.boot_completed=1
     # must restore after elementalx
     restorecon -R /sys/devices/system/cpu
     write /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq 384000
-    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq 1248000
+    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq 1536000
 
     # re-enable thermal and BCL hotplug
     write /sys/module/msm_thermal/core_control/enabled 1
