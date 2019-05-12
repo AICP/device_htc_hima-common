@@ -137,6 +137,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.aicp.build.vendor_security_patch=2017-04-01
 
+# WFD
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.debug.wfd.enable=1 \
+    vendor.video.disable.ubwc=1 \
+    debug.sf.enable_hwc_vds=0 \
+    vendor.vidc.enc.disable.pq=true \
+    persist.hwc.enable_vds=0 \
+    vendor.gralloc.disable_wb_ubwc=1
+
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \
