@@ -68,13 +68,15 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml \
     frameworks/native/data/etc/android.hardware.vulkan.level-0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level.xml \
     frameworks/native/data/etc/android.hardware.vulkan.version-1_0_3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version.xml \
+    $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     $(LOCAL_PATH)/configs/permissions/com.htc.software.market.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.htc.software.market.xml \
     $(LOCAL_PATH)/configs/permissions/com.htc.htcadaptivesound_c.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.htc.htcadaptivesound_c.xml \
     $(LOCAL_PATH)/configs/permissions/com.htc.sensor.autocalibration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.htc.sensor.autocalibration.xml \
     $(LOCAL_PATH)/configs/permissions/com.htc.sensor.sensorhub.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.htc.sensor.sensorhub.xml \
     $(LOCAL_PATH)/configs/permissions/com.htc.voicedictation_c.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.htc.voicedictation_c.xml \
     $(LOCAL_PATH)/configs/permissions/com.htc.key.dap.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.htc.voicedictation_c.xml \
-    $(LOCAL_PATH)/configs/permissions/com.htc.sensor.hallsensor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.htc.voicedictation_c.xml
+    $(LOCAL_PATH)/configs/permissions/com.htc.sensor.hallsensor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.htc.voicedictation_c.xml \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-oem.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-oem.xml
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -139,7 +141,8 @@ PRODUCT_PACKAGES += \
     gralloc.msm8994 \
     hwcomposer.msm8994 \
     memtrack.msm8994 \
-    libtinyxml
+    libtinyxml \
+    vendor.display.config@1.0
 
 # Dot View Case
 PRODUCT_PACKAGES += \
@@ -333,4 +336,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
+
+# WiFi Display
+PRODUCT_PACKAGES += \
+    libnl
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
 
