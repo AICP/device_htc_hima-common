@@ -63,7 +63,11 @@
         <value>2.88</value>
         <value>2.88</value>
     </array>
-    <array name="cpu.speeds">
+     <array name="cpu.clusters.cores">
+        <value>4</value> <!-- Cluster 0 has 4 cores (cpu0, cpu1, cpu2, cpu3) -->
+        <value>4</value> <!-- Cluster 1 has 4 cores (cpu4, cpu5, cpu6, cpu7) -->
+    </array>
+    <array name="cpu.core_speeds.cluster0">
         <value>300000</value>
         <value>384000</value>
         <value>460800</value>
@@ -77,9 +81,26 @@
         <value>1478400</value>
         <value>1555200</value>
     </array>
-    <item name="cpu.idle">2.52</item>
-    <item name="cpu.awake">9.08</item>
-    <array name="cpu.active">
+    <array name="cpu.speeds.cluster1">
+        <value>300000</value>
+        <value>384000</value>
+        <value>480000</value>
+        <value>633600</value>
+        <value>768000</value>
+        <value>864000</value>
+        <value>960000</value>
+        <value>1248000</value>
+        <value>1344000</value>
+        <value>1440000</value>
+        <value>1536000</value>
+        <value>1632000</value>
+        <value>1728000</value>
+        <value>1824000</value>
+        <value>1958400</value>
+    </array>
+    <item name="cpu.suspend">2.52</item>
+    <item name="cpu.idle">9.08</item>
+    <array name="cpu.core_power.cluster0">
         <value>68</value>
         <value>74</value>
         <value>76</value>
@@ -92,6 +113,21 @@
         <value>143</value>
         <value>153</value>
         <value>162</value>
+    </array>
+    <array name="cpu.active.cluster1">
+        <value>75</value>
+		<value>86</value>
+        <value>103</value>
+        <value>129</value>
+        <value>155</value>
+        <value>177</value>
+        <value>195</value>
+        <value>265</value>
+        <value>292</value>
+        <value>322</value>
+        <value>348</value>
+        <value>370</value>
+        <value>405</value>
     </array>
     <array name="wifi.batchedscan">
         <value>0.0002</value>
