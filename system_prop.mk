@@ -46,6 +46,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
    vendor.qcom.bluetooth.soc=rome \
    ro.boot.btmacaddr=00:00:00:00:00:00
 
+# Camera
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.camera.tuning_spec=htc
+
 # Dalvik heap
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=8m \
