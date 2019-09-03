@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "95f971e2_3b9acd1c",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 400,
+      "author": {
+        "id": 1393
+      },
+      "writtenOn": "2019-09-03T02:50:11Z",
+      "side": 1,
+      "message": "If fixing spacing above and below, should fix spacing here too.",
+      "range": {
+        "startLine": 398,
+        "startChar": 0,
+        "endLine": 400,
+        "endChar": 23
+      },
+      "revId": "65537eb1ae9534e34080f3d9d2d3dc51613af44b",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
+      "unresolved": true
+    }
+  ]
+}
