@@ -256,9 +256,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
     $(LOCAL_PATH)/configs/nfc/nfcee_access.xml:system/etc/nfcee_access.xml \
     $(LOCAL_PATH)/prebuilts/nfc/lib/nfc_nci.msm8994.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/nfc_nci.msm8994.so \
-    $(LOCAL_PATH)/prebuilts/nfc/lib64/nfc_nci.msm8994.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/nfc_nci.msm8994.so \
-    $(LOCAL_PATH)/prebuilts/nfc/lib/android.hardware.nfc@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.nfc@1.0-impl.so \
-    $(LOCAL_PATH)/prebuilts/nfc/lib64/android.hardware.nfc@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.nfc@1.0-impl.so
+    $(LOCAL_PATH)/prebuilts/nfc/lib64/nfc_nci.msm8994.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/nfc_nci.msm8994.so
+#    $(LOCAL_PATH)/prebuilts/nfc/lib/android.hardware.nfc@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.nfc@1.0-impl.so \
+ #   $(LOCAL_PATH)/prebuilts/nfc/lib64/android.hardware.nfc@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.nfc@1.0-impl.so
 
 
 # OMX
@@ -297,10 +297,10 @@ PRODUCT_PACKAGES += \
 
 
 # codeaurora telephony-ext
-PRODUCT_PACKAGES += \
-  telephony-ext
-PRODUCT_BOOT_JARS += \
-   telephony-ext
+#PRODUCT_PACKAGES += \
+#  telephony-ext
+#PRODUCT_BOOT_JARS += \
+#   telephony-ext
 
 
 
