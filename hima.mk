@@ -196,9 +196,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/synaptics_dsx.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics_dsx.kl
 
 # IPACM
-PRODUCT_PACKAGES += \
-    IPACM_cfg.xml \
-    ipacm
+#PRODUCT_PACKAGES += \
+#    IPACM_cfg.xml \
+#    ipacm
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -263,7 +263,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilts/nfc/lib/nfc_nci.msm8994.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/nfc_nci.msm8994.so \
     $(LOCAL_PATH)/prebuilts/nfc/lib64/nfc_nci.msm8994.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/nfc_nci.msm8994.so
 
-
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
@@ -300,10 +299,10 @@ PRODUCT_PACKAGES += \
 
 
 # codeaurora telephony-ext
-PRODUCT_PACKAGES += \
-  telephony-ext
-PRODUCT_BOOT_JARS += \
-   telephony-ext
+#PRODUCT_PACKAGES += \
+#  telephony-ext
+#PRODUCT_BOOT_JARS += \
+#   telephony-ext
 
 
 
