@@ -116,10 +116,10 @@ PRODUCT_PACKAGES += \
     libbt-vendor
 
 # Camera
-PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.4-impl-hima \
-    libshim_camera_hima \
-    Snap
+#PRODUCT_PACKAGES += \
+#    android.hardware.camera.provider@2.4-impl-hima \
+#    libshim_camera_hima \
+#    Snap
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/hdrhax:$(TARGET_COPY_OUT_VENDOR)/etc/hdrhax
@@ -127,6 +127,10 @@ PRODUCT_COPY_FILES += \
 # Consumer IR
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl
+
+# DTBTool
+PRODUCT_HOST_PACKAGES += \
+    dtbToolLineage
 
 # Display
 PRODUCT_PACKAGES += \
@@ -152,8 +156,8 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service
 
 # Gesture Handler
-PRODUCT_PACKAGES += \
-    GestureHandler
+#PRODUCT_PACKAGES += \
+#    GestureHandler
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -192,9 +196,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/synaptics_dsx.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics_dsx.kl
 
 # IPACM
-PRODUCT_PACKAGES += \
-    IPACM_cfg.xml \
-    ipacm
+#PRODUCT_PACKAGES += \
+#    IPACM_cfg.xml \
+#    ipacm
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -256,9 +260,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
     $(LOCAL_PATH)/configs/nfc/nfcee_access.xml:system/etc/nfcee_access.xml \
     $(LOCAL_PATH)/prebuilts/nfc/lib/nfc_nci.msm8994.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/nfc_nci.msm8994.so \
-    $(LOCAL_PATH)/prebuilts/nfc/lib64/nfc_nci.msm8994.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/nfc_nci.msm8994.so \
-    $(LOCAL_PATH)/prebuilts/nfc/lib/android.hardware.nfc@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.nfc@1.0-impl.so \
-    $(LOCAL_PATH)/prebuilts/nfc/lib64/android.hardware.nfc@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.nfc@1.0-impl.so
+    $(LOCAL_PATH)/prebuilts/nfc/lib64/nfc_nci.msm8994.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/nfc_nci.msm8994.so
+#    $(LOCAL_PATH)/prebuilts/nfc/lib/android.hardware.nfc@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.nfc@1.0-impl.so \
+ #   $(LOCAL_PATH)/prebuilts/nfc/lib64/android.hardware.nfc@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.nfc@1.0-impl.so
 
 
 # OMX
@@ -297,10 +301,10 @@ PRODUCT_PACKAGES += \
 
 
 # codeaurora telephony-ext
-PRODUCT_PACKAGES += \
-  telephony-ext
-PRODUCT_BOOT_JARS += \
-   telephony-ext
+#PRODUCT_PACKAGES += \
+#  telephony-ext
+#PRODUCT_BOOT_JARS += \
+#   telephony-ext
 
 
 
