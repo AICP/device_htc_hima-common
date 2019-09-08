@@ -166,7 +166,13 @@ BOARD_GLOBAL_CFLAGS += -DCOMPAT_SENSORS_M
 
 # SELinux
 #include device/qcom/sepolicy-legacy/sepolicy.mk
-#BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
+BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
+
+# We modify several neverallows, so let the build proceed
+ifneq ($(TARGET_BUILD_VARIANT),user)
+SELINUX_IGNORE_NEVERALLOWS := true
+endif
+
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
