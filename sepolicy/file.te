@@ -11,7 +11,7 @@ type rpm_stats_debug_file, file_type;
 type rmt_storage_debug_file, file_type;
 
 # sysfs
-type sysfs_camera, sysfs_type, fs_type;
+#type sysfs_camera, sysfs_type, fs_type;
 type sysfs_camera_awb_cal, fs_type, sysfs_type;
 type sysfs_camera_sensor, fs_type, sysfs_type;
 type sysfs_cir, fs_type, sysfs_type;
