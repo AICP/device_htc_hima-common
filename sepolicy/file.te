@@ -3,6 +3,7 @@ type data_misc_calibrator_file, file_type;
 # debugfs
 type debugfs_heaps_system, fs_type, debugfs_type;
 
+type firmware_file, file_type;
 # procfs
 type proc_kernel_sched, fs_type, proc_type;
 type proc_swap, fs_type, proc_type;
