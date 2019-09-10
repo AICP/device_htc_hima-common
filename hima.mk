@@ -115,6 +115,10 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-service \
     libbt-vendor
 
+# Binder support symbols
+PRODUCT_PACKAGES += \
+    libshim_binder
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl-hima \
