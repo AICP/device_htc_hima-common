@@ -128,10 +128,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl
 
-# DTBTool
-PRODUCT_HOST_PACKAGES += \
-    dtbToolLineage
-
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
