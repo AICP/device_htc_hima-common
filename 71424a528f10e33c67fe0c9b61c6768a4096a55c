@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5341f485_ff35f5f5",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 180,
+      "author": {
+        "id": 1375
+      },
+      "writtenOn": "2019-09-12T17:51:00Z",
+      "side": 1,
+      "message": "lets fix all paths for shims then",
+      "revId": "71424a528f10e33c67fe0c9b61c6768a4096a55c",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
+      "unresolved": true
+    }
+  ]
+}
