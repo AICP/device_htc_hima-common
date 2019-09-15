@@ -291,7 +291,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcnefeatureconfig \
     librmnetctl \
-    libshim_ril_hima
+    libshim_ril_hima \
+    ril_headers_htc
 
 
 # codeaurora telephony-ext
