@@ -162,6 +162,7 @@ PRODUCT_PACKAGES += \
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl \
+    android.hardware.gnss@1.0-service \
     libshim_gps_hima
 
 PRODUCT_COPY_FILES += \
